@@ -46,7 +46,7 @@ while True:
     plt.pause(1)
     zor += 1
 
-    sea_old = sea.copy()
+    sea_old = sea.deepcopy()
     for i in range(len(sea_old)):
         for j in range(len(sea_old[i])):
             if sea_old[i][j] == 1:
